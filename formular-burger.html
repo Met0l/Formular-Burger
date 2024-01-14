@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formular burger</title>
+        <meta name="description" content="Construieste-ti propriul burger:formular">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="burger.css "> 
+    </head>
+    <body>
+        <form>
+            <h1> Creeaza-ti propriul burger!</h1>
+            <section class="carne">
+                <label for="carne">Ce tip de carne iti doresti?</label><br>
+                <input type="text" name="carne" id="carne"> <hr>
+                <label for="chiftele">Cate chiftele vrei in burgerul tau?</label><br>
+                <input type="number" nume="chiftele" id="chiftele" min="1" max="5"><hr>
+            </section>
+            <section class="gatit">
+                <label for="gatit">Cat de gatita sa fie chifteaua?</label><br>
+                <span>Rare</span>
+                <input type="range" name="gatit" id="gatit" value="3" min="1" max="5" step="1"> 
+                <span>Well done</span><br>
+                <input type="button" name="inainte" value="inainte"><hr>
+            </section>
+            <section class="topping">
+                <span>Alege topping-urile dorite:</span><br>
+                <input type="checkbox" name="topping" id="salata" value="salata">
+                <label for="salata">Salata</label>
+                <input type="checkbox" name="topping" id="rosii" value="rosii">
+                <label for="rosii">Rosii</label>
+                <input type="checkbox" name="topping" id="ceapa" value="ceapa">
+                <label for="ceapa">Ceapa</label>
+                <input type="checkbox" name="topping" id="castraveti" value="castraveti">
+                <label for="castraveti">Castraveti</label>
+                <input type="checkbox" name="topping" id="bacon" value="bacon">
+                <label for="bacon">Bacon</label>
+            </section><hr>
+            <section class="branza">
+                <span>Doriti branza?</span><br>
+                <input type="radio" name="branza" id="da" value="da">
+                <label for="da">Da</label>
+                <input type="radio" name="branza" id="nu" value="nu">
+                <label for="nu">Nu</label>
+                <input type="radio" name="branza" id="normal" value="normal">
+                <label for="normal">Se mai si intreaba?</label> <br>
+                <input type="button" name="inapoi" value="inapoi">
+                <input type="button" name="inainte" value="inainte">
+            </section><hr>
+            <section class="chifla">
+                <label for="chifla">Tipul de chifla:</label>
+                <select name="chifla" id="chifla">
+                    <option value="susan">Cu susan</option>
+                    <option value="mac">Cu mac</option>
+                    <oprion value="fara gluten">Fara gluten</oprion>
+                    <option value="de cartofi">De cartofi</option>
+                    <option value="neagra">Paine neagra</option>
+                </select>
+            </section><hr>
+            <section class="sos">
+                <label for="sos">Sosul principal:</label>
+                <input type="text" list="sosuri" id="sos" name="sos">
+                <datalist id="sosuri">
+                    <option value="ketchup"></option>
+                    <option value="maioneza"></option>
+                    <option value="mustar"></option>
+                    <option value="barbecue"></option>
+                    <option value="tzatziki"></option>
+                    <option value="bechamel"></option>
+                </datalist> <br>
+                <input type="button" name="inapoi" value="inapoi">
+                <input type="button" name="inainte" value="inainte">
+            </section><hr>
+            <section class="extra">
+                <label for="extra">Daca mai doriti sa adaugati un ingredient extra:</label>
+                <textarea name="extra" id="extra" rows="3" cols="30"></textarea> <br>
+                <input type="button" name="inapoi" value="inapoi"><br>
+                <input type="submit" value="submit">
+            </section><hr>
+        </form>
+    </body>
+</html>

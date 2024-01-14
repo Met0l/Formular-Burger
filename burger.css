@@ -1,0 +1,22 @@
+body {
+    background-color: #a61b1b;
+}
+
+h1,section {
+    color: white;
+}
+
+input {
+    background-color: rgb(159, 180, 43);
+    color: white;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+input:focus {
+    background-color: rgb(15, 77, 175);
+}
+input[type=textarea] {
+    background-color: rgb(159, 180, 43);
+}
